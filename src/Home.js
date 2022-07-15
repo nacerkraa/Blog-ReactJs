@@ -1,9 +1,10 @@
 import { useState } from "react";
 const Home = () => {
-    let name = "Mario";
+    // let name = "Mario";
+    const [name,setName] = useState("Mario");
+    
     const handleClick = () => {
-        name = "Yushi";
-        console.log(name);
+        setName("Kaido");
     }
 
 
