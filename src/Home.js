@@ -16,7 +16,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log("Use Effect Run");
+        console.log("Use Effect Run"); // use depandices
     }, [name]);
 
     return(
@@ -24,6 +24,7 @@ const Home = () => {
         <div className="Home">
             <BlogList blogs={blogs} title="The list of the blogs" handleDelete={handleDelete}/>
             <button onClick={() => setName("Lossi")}>change name</button>
+            <button onClick={() => setName("Maio")}>change again</button>
             <p>{name}</p>
         </div>
     );
