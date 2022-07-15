@@ -1,4 +1,5 @@
 const Navbar = () => {
+    
     return(
         <nav className="navbar">
             <h1>Brand</h1>
