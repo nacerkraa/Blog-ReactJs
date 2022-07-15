@@ -15,6 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         console.log("Use Effect Run");
+        console.log(blogs);
     });
 
     return(
