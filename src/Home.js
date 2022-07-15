@@ -16,7 +16,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log("Use Effect Run"); // use depandices
+        console.log("Use Effect Run");
     }, [name]);
 
     return(
