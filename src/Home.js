@@ -8,8 +8,9 @@ const Home = () => {
         {title:"The best programming languiges", body:"lorem ipsum...", auther:"mikasa", id:4}
     ]);
 
-    const handleDelete = () => {
-
+    const handleDelete = (id) => {
+        const newBlog = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlog);
     }
 
     return(
