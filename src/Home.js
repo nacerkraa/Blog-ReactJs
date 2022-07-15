@@ -24,7 +24,6 @@ const Home = () => {
         <div className="Home">
             <BlogList blogs={blogs} title="The list of the blogs" handleDelete={handleDelete}/>
             <button onClick={() => setName("Lossi")}>change name</button>
-            <button onClick={() => setName("Maio")}>change again</button>
             <p>{name}</p>
         </div>
     );
