@@ -17,7 +17,7 @@ const Home = () => {
             })
 
             .then(data => {
-                console.log(data);
+                setBlogs(data);
             })
     }, []);
 
@@ -25,7 +25,7 @@ const Home = () => {
     return (
 
         <div className="Home">
-            
+            <BlogList blogs={blogs} title="All blogs!" handleDelete={handleDelete} />
         </div>
     );
 }
