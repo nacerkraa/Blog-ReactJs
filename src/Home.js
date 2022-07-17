@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 const Home = () => {
     const [blogs, setBlogs] = useState(null);
+    const [isPending, setIsPending] = useState(true);
 
     const [name, setName] = useState("Maio");
 
@@ -18,6 +19,7 @@ const Home = () => {
 
             .then(data => {
                 setBlogs(data);
+                setIsPending(false);
             })
     }, []);
 
@@ -25,6 +27,7 @@ const Home = () => {
     return (
 
         <div className="Home">
+            {isPending && <div>Is Pending...</div>}
             {blogs && <BlogList blogs={blogs} title="All blogs!" handleDelete={handleDelete} />}
         </div>
     );
