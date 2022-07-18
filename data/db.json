@@ -12,6 +12,14 @@
         "body": "Why do we use it? 'Content here, content here', making it look like .",
         "author": "yoshi",
         "id": 2
+      },
+
+      {
+        "title": "My Last Blog",
+        "body": "Why do we use it? 'Content here, content here', making it look like .",
+        "author": "mario",
+        "id": 3
       }
+
     ]
   }
