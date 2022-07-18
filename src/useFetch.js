@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-const useFetch = () => {
+const useFetch = (url) => {
     useEffect(() => {
         const [data, setData] = useState(null);
         const [isPending, setIsPending] = useState(true);
         const [error, setError] = useState(null);
     
-        fetch('http://localhost:8000/blogs')
+        fetch(url)
             .then(res => {
                 if (!res.ok) {
                     throw Error("Could not fetch the data for that resorce...")
@@ -25,6 +25,8 @@ const useFetch = () => {
                 setError(err.message);
             })
     }, []);
+
+    return {data, isPending, error}
 }
 
 export default useFetch;
