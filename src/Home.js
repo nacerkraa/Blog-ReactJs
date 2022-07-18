@@ -27,7 +27,7 @@ const Home = () => {
     return (
 
         <div className="Home">
-            {isPending && <div>Is Pending...</div>}
+            {isPending && <div>Loading...</div>}
             {blogs && <BlogList blogs={blogs} title="All blogs!" handleDelete={handleDelete} />}
         </div>
     );
