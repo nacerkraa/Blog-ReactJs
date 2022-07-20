@@ -1,6 +1,9 @@
+import { useParams } from "react-router-dom";
+
 const BlogDetails = () => {
+    const {id} = useParams();
     return ( 
-        <h2>Blogs Details</h2>
+        <h2>Blogs Details -{id}</h2>
      );
 }
  
