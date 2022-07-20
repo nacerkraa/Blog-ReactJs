@@ -13,6 +13,7 @@ const useFetch = (url) => {
                 if (!res.ok) {
                     throw Error("Could not fetch the data for that resorce...")
                 }
+                
                 return res.json();
             })
 
