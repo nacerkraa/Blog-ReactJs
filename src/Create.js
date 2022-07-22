@@ -16,7 +16,7 @@ const Create = () => {
                 required
             />
 
-            <label>Blog body:</label>
+            <label>Blog body:</label> 
             <textarea
                 required
                 value={title}
