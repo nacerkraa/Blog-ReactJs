@@ -8,7 +8,7 @@ const Create = () => {
         <div className="create">
             <h2>Add a New Blog</h2> 
             <from>
-            <label>Blog title:</label>
+            <label>Blog title:</label> 
             <input 
                 type="text"
                 value={title}
