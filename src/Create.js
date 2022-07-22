@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 const Create = () => {
+    const [title, setTitle] = useState("");
+    const [body, setBody] = useState("");
+
     return (
         <div className="create">
             <h2>Add a New Blog</h2>
@@ -6,12 +11,16 @@ const Create = () => {
             <label>Blog title:</label>
             <input 
                 type="text"
+                value={title}
+                onChange= {(e) => setTitle(e.target.value)}
                 required
             />
 
             <label>Blog body:</label>
             <textarea 
                 required
+                value={title}
+                onChange={(e) => setBody(e.target.value)}
             ></textarea>
 
             <label>Auther:</label>
@@ -21,6 +30,8 @@ const Create = () => {
             </select>
             <button>Add Blog</button>
             </from>
+            <p>{title}</p>
+            <div>{body}</div>
         </div>
      );
 }
