@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Create = () => {
+const Create = () => { 
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
 
