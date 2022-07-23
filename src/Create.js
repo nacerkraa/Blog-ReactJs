@@ -5,7 +5,7 @@ const Create = () => {
     const [body, setBody] = useState("");
     const [auther, setAuther] = useState("yoshi");
 
-    const  handleSubmit = (e) => {  
+    const  handleSubmit = (e) => {
         e.preventDefault();
         const blog = {title, body, auther};
         
