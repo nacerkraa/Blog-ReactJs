@@ -31,7 +31,6 @@ const Create = () => {
             <button>Add Blog</button>
             </from>
             <p>{title}</p>
-
             <div>{body}</div>
         </div>
      );
