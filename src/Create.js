@@ -16,7 +16,6 @@ const Create = () => {
                 required
             />
 
-
             <label>Blog body:</label>
             <textarea
                 required
