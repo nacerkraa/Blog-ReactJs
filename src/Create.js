@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Create = () => {
+    // add atributes
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [auther, setAuther] = useState("yoshi");
