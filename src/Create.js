@@ -7,7 +7,7 @@ const Create = () => {
 
 
     return (
-        
+
         <div className="create"> 
             <h2>Add a New Blog</h2>
             <from>
@@ -36,7 +36,7 @@ const Create = () => {
             <p>{title}</p>
             <div>{body}</div>
         </div>
-     );
+    );
 }
 
 export default Create;
