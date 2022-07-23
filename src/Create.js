@@ -5,13 +5,13 @@ const Create = () => {
     const [body, setBody] = useState("");
 
     return (
-        <div className="create">
+        <div className="create"> 
             <h2>Add a New Blog</h2>
             <from>
             <label>Blog title:</label>
             <input
                 type="text"
-                
+
                 value={title}
                 onChange= {(e) => setTitle(e.target.value)}
                 required
