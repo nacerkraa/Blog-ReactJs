@@ -9,7 +9,7 @@ const Create = () => {
             <h2>Add a New Blog</h2>
             <from>
             <label>Blog title:</label>
-            <input 
+            <input
                 type="text"
                 value={title}
                 onChange= {(e) => setTitle(e.target.value)}
