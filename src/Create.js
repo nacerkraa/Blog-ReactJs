@@ -27,7 +27,10 @@ const Create = () => {
             ></textarea>
 
             <label>Auther:</label>
-            <select>
+            <select
+                value={auther}
+                onChange={(e) => setAuther(e.target.value)}
+            >
                 <option value="mario">mario</option>
                 <option value="yoshi">yoshi</option>
             </select>
@@ -35,6 +38,7 @@ const Create = () => {
             </from>
             <p>{title}</p>
             <div>{body}</div>
+            <div>{auther}</div>
         </div>
     );
 }
