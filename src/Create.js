@@ -3,7 +3,7 @@ import { useState } from "react";
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
-    const [auther, setAuther] = useState("youshi");
+    const [auther, setAuther] = useState("yoshi");
 
 
     return (
