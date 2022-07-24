@@ -5,11 +5,14 @@ const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [auther, setAuther] = useState("yoshi");
+    const [ispending, setIsPending] = useState("fasle")
 
     const  handleSubmit = (e) => {
         e.preventDefault();
         const blog = {title, body, auther};
         
+        setIsPending('true');
+
         fetch('http://localhost:8000/blogs',{
             method: 'POST',
             headers:{"Content-Type": "application/json"},
