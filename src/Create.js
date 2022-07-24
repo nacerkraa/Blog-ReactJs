@@ -7,7 +7,7 @@ const Create = () => {
     const [body, setBody] = useState("");
     const [auther, setAuther] = useState("yoshi");
     const [ispending, setIsPending] = useState(false)
-    const history = useHistory
+    const history = useHistory();
 
     const  handleSubmit = (e) => {
         e.preventDefault();
