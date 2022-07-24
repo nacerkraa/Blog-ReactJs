@@ -5,7 +5,7 @@ const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [auther, setAuther] = useState("yoshi");
-    const [ispending, setIsPending] = useState(fasle)
+    const [ispending, setIsPending] = useState(false)
 
     const  handleSubmit = (e) => {
         e.preventDefault();
